@@ -4,3 +4,4 @@
 
 - Project setup
 - Generate map Boundaries
+- Add Pacman with movement
