@@ -5,3 +5,4 @@
 - Project setup
 - Generate map Boundaries
 - Add Pacman with movement
+- Add Collision detection
