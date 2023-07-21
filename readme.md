@@ -6,3 +6,4 @@
 - Generate map Boundaries
 - Add Pacman with movement
 - Add Collision detection
+- Improve movements when goes through the gap
