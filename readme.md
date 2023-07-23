@@ -8,3 +8,4 @@
 - Add Collision detection
 - Improve movements when goes through the gap
 - Swap boundaries with images
+- Generate pellets
