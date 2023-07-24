@@ -410,8 +410,20 @@ function animate() {
     }
   }
 
-  pellets.forEach((pellet) => {
+  pellets.forEach((pellet, i) => {
     pellet.draw();
+
+    if (
+      Math.hypot(
+        pellet.position.x - player.position.x,
+        pellet.position.y - player.position.y
+      ) <
+      pellet.radius + player.radius
+    ) {
+      setTimeout(() => {
+        pellets.splice(i, 1);
+      }, 0);
+    }
   });
 
   boundaries.forEach((boundary) => {
