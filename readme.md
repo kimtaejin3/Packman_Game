@@ -10,3 +10,4 @@
 - Swap boundaries with images
 - Generate pellets
 - Remove pellets on collision
+- Add score

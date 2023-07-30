@@ -1,6 +1,8 @@
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
 
+const scoreEL = document.querySelector("#scoreEL");
+
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
@@ -103,6 +105,7 @@ const keys = {
 };
 
 let lastKey = "";
+let score = 0;
 
 function createImage(src) {
   const image = new Image();
@@ -420,8 +423,11 @@ function animate() {
       ) <
       pellet.radius + player.radius
     ) {
+      console.log("touching");
       setTimeout(() => {
         pellets.splice(i, 1);
+        score += 10;
+        scoreEL.innerHTML = score;
       }, 0);
     }
   });
